@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/harmonica_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="HARMONICA"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/harp_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="HARP"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/keyboard_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView3" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="KEYBOARD"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/lyre_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView4" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="LYRE"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/mandolin_clipart"
+
+            android:scaleType="fitXY"
+            android:id="@+id/imageView5" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="MANDOLIN"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>

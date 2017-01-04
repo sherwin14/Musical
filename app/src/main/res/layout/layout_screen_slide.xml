@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:id="@+id/imageButton"
+        android:background="#fafafa"
+        android:layout_gravity="end" />
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_weight="16.82" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+        <Button
+            android:text="1"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPageOne"
+            android:textStyle="bold"
+            />
+        <Button
+            android:text="2"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPageTwo"
+            android:textStyle="bold"
+            />
+        <Button
+            android:text="3"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPageThree"
+            android:textStyle="bold"
+            />
+        <Button
+            android:text="4"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPageFour"
+            android:textStyle="bold"
+            />
+        <Button
+            android:text="5"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPageFive"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</LinearLayout>

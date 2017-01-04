@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/bagpipe_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/bagPipes" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="BAGPIPE"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/banjo_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/banjo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="BANJO"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/bass_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/bassDrum" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="BASS DRUM"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/clarinet_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/clarinet" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="CLARINET"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/drum_set_clipart"
+
+            android:scaleType="fitXY"
+            android:id="@+id/drumSet" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="DRUM SET"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/trombone_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="TROMBONE"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/trumpet_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="TRUMPET"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/tuba_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView3" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="TUBA"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/violin_clipart"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView4" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="VIOLIN"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <ImageButton
+            android:background="?android:selectableItemBackground"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/xylophone_clipart"
+
+            android:scaleType="fitXY"
+            android:id="@+id/imageView5" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="XYLOPHONE"
+            android:paddingTop="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>
