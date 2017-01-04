@@ -52,10 +52,12 @@ public class ScreenSlidePageFragmentOne extends Fragment implements View.OnClick
         switch (v.getId()){
             case R.id.bagPipes:
                 imageView.setImageDrawable(getResources().getDrawable(R.drawable.bagpipe_clipart));
+                textCaption.setText("BAGPIPES");
                 soundPlayer = new SoundMediaPlayer(getContext(),R.raw.bagpipes_sound);
                 break;
             case R.id.banjo:
                 imageView.setImageDrawable(getResources().getDrawable(R.drawable.banjo_clipart));
+                textCaption.setText("BANJO");
                 soundPlayer = new SoundMediaPlayer(getContext(),R.raw.banjo_sound);
                 break;
         }
