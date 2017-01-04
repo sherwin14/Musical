@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnPageOne"
             android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
             />
         <Button
             android:text="2"

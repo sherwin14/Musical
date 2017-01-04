@@ -70,7 +70,61 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
         mPager.setCurrentItem(0);
+        mPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                switch (position){
+                    case 0:
+                        pageOne.setTextColor(ResourcesCompat.getColor(getResources(),R.color.colorPrimaryDark,null));
+                        pageTwo.setTextColor(Color.BLACK);
+                        pageThree.setTextColor(Color.BLACK);
+                        pageFour.setTextColor(Color.BLACK);
+                        pageFive.setTextColor(Color.BLACK);
 
+                        break;
+                    case 1:
+                        pageTwo.setTextColor(ResourcesCompat.getColor(getResources(),R.color.colorPrimaryDark,null));
+                        pageOne.setTextColor(Color.BLACK);
+                        pageThree.setTextColor(Color.BLACK);
+                        pageFour.setTextColor(Color.BLACK);
+                        pageFive.setTextColor(Color.BLACK);
+
+                        break;
+                    case 2:
+                        pageThree.setTextColor(ResourcesCompat.getColor(getResources(),R.color.colorPrimaryDark,null));
+                        pageOne.setTextColor(Color.BLACK);
+                        pageTwo.setTextColor(Color.BLACK);
+                        pageFour.setTextColor(Color.BLACK);
+                        pageFive.setTextColor(Color.BLACK);
+
+                        break;
+                    case 3:
+                        pageFour.setTextColor(ResourcesCompat.getColor(getResources(),R.color.colorPrimaryDark,null));
+                        pageOne.setTextColor(Color.BLACK);
+                        pageTwo.setTextColor(Color.BLACK);
+                        pageThree.setTextColor(Color.BLACK);
+                        pageFive.setTextColor(Color.BLACK);
+                        break;
+                    case 4:
+                        pageFive.setTextColor(ResourcesCompat.getColor(getResources(),R.color.colorPrimaryDark,null));
+                        pageOne.setTextColor(Color.BLACK);
+                        pageTwo.setTextColor(Color.BLACK);
+                        pageThree.setTextColor(Color.BLACK);
+                        pageFour.setTextColor(Color.BLACK);
+                        break;
+                }
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
     @Override
