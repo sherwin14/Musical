@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Set the content view to layou_screen_slide, Located at res/layout/
+        // Set the content view to layout_screen_slide, Located at res/layout/
         setContentView(R.layout.layout_screen_slide);
 
         /**
