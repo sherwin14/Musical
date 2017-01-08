@@ -3,7 +3,9 @@ package com.webteq.musical;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,14 +62,39 @@ public class ScreenSlidePageFragmentOne extends Fragment implements View.OnClick
                 textCaption.setText("BANJO");
                 soundPlayer = new SoundMediaPlayer(getContext(),R.raw.banjo_sound);
                 break;
+            case R.id.bassDrum:
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.bass_clipart));
+                textCaption.setText("BASS DRUM");
+                soundPlayer = new SoundMediaPlayer(getContext(),R.raw.bass_drum_sound);
+                break;
+            case R.id.clarinet:
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.clarinet_clipart));
+                textCaption.setText("CLARINET");
+                soundPlayer = new SoundMediaPlayer(getContext(),R.raw.clarinet_sound);
+                break;
+            case R.id.drumSet:
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.drum_set_clipart));
+                textCaption.setText("DRUM SET");
+                soundPlayer = new SoundMediaPlayer(getContext(),R.raw.drum_set_sound);
+                break;
         }
 
         final ImageButton play = (ImageButton) dialog.findViewById(R.id.play);
+
+        final Handler mHandler = new Handler();
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 soundPlayer.play();
-                play.setEnabled(false);
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                       play.setEnabled(!soundPlayer.isPlaying());
+                       //play.setEnabled(!soundPlayer.isPlaying());
+                        mHandler.postDelayed(this,1);
+                    }
+                });
+                play.setEnabled(!soundPlayer.isPlaying());
             }
         });
 
@@ -99,4 +126,7 @@ public class ScreenSlidePageFragmentOne extends Fragment implements View.OnClick
 
         dialog.show();
     }
+
+
+
 }

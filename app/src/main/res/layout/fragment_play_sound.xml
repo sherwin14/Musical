@@ -28,26 +28,30 @@
             android:layout_gravity="center"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true">
+            android:layout_alignParentEnd="true"
+            >
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@android:drawable/ic_media_play"
                 android:id="@+id/play"
+                android:background="@drawable/btn_style"
                 />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_media_stop"
-                android:id="@+id/stop" />
+                android:id="@+id/stop"
+                android:background="@drawable/btn_style"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@android:drawable/ic_media_pause"
                 android:id="@+id/pause"
+                android:background="@drawable/btn_style"
                 />
         </LinearLayout>
     </LinearLayout>

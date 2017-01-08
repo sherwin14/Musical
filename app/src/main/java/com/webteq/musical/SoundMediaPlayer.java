@@ -20,14 +20,18 @@ public class SoundMediaPlayer {
     }
 
     public void play() {
-
         mediaPlayer.start();
     }
     public void stop(){
-        mediaPlayer.seekTo(-1);
         mediaPlayer.pause();
+        mediaPlayer.seekTo(0);
         //mediaPlayer.release();
     }
+
+    public boolean isPlaying(){
+        return mediaPlayer.isPlaying();
+    }
+
     public void pause(){
         mediaPlayer.pause();
     }
